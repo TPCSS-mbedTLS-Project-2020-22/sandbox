@@ -1,0 +1,18 @@
+[package]
+name = "c-to-rust"
+version = "0.1.0"
+authors = ["Alvin <alvingeorge>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[build-dependencies]
+cc = "^1.0"
+
+
+[lib]
+name = "test_c2rust"
+crate-type = ["staticlib", "cdylib"]
+
